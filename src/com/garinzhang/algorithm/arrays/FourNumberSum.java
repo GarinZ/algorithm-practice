@@ -34,7 +34,6 @@ public class FourNumberSum {
     public static void main(String[] args) {
         int[] array = new int[]{7, 6, 4, -1, 1, 2};
         List<Integer[]> result = fourNumberSum(array, 16);
-        List<Integer> arr = new ArrayList<>();
         System.out.println(result);
     }
 }

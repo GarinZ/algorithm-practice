@@ -4,7 +4,6 @@ package com.garinzhang.algorithm.arrays;
  * @author Garin
  * @date 2020-08-13
  */
-import java.util.*;
 
 class MinRewards {
     public static int minRewards(int[] scores) {
