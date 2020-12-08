@@ -28,10 +28,9 @@ public class LongestSubstringWithoutDuplicate {
     }
 
     public static void main(String[] args) {
-        // System.out.println(longestSubstring("aabcddef"));
-        System.out.println(longestSubstring(""));
-        // map中包含a
-        System.out.println(longestSubstring("abba"));
-        System.out.println(longestSubstring("au"));
+        System.out.println(longestSubstring(" ") == 1);
+        System.out.println(longestSubstring("") == 0);
+        System.out.println(longestSubstring("au") == 2);
+        System.out.println(longestSubstring("abbc") == 2);
     }
 }
