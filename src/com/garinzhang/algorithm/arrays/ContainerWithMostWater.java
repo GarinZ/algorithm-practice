@@ -1,4 +1,4 @@
-package com.garinzhang.algorithm.dynamicprogramming;
+package com.garinzhang.algorithm.arrays;
 
 public class ContainerWithMostWater {
     public static int maxArea(int[] height) {
