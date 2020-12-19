@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ThreeNumberSort {
     /**
-     * Main Idea:  Bucket Sort
+     * Main Idea:  Counting Sort
      */
     static class Solution1 {
         public static int[] threeNumberSort(int[] array, int[] order) {
