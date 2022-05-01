@@ -1,7 +1,5 @@
 package com.garinzhang.algorithm.arrays;
 
-import java.util.*;
-
 public class MonotonicArray {
     public boolean monotonicArray(int[] array) {
         int direction = array[1] - array[0];

@@ -13,4 +13,8 @@ public class KadanesAlgorithm {
         }
         return max;
     }
+
+    public static void main(String[] args) {
+        KadanesAlgorithm kadanesAlgorithm = new KadanesAlgorithm();
+    }
 }

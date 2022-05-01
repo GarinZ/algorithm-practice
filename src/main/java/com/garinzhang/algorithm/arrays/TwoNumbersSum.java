@@ -1,9 +1,8 @@
 package com.garinzhang.algorithm.arrays;
 
-import com.garinzhang.algorithm.TestUtils;
+import com.garinzhang.utils.TestUtils;
 
 import java.util.Arrays;
-import java.util.Map;
 
 public class TwoNumbersSum {
     public static int[] twoNumbersSum(int[] array, int targetSum) {

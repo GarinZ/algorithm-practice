@@ -1,5 +1,4 @@
 package com.garinzhang.algorithm.arrays;
-import java.util.*;
 
 public class SubarraySort {
     public static int[] subarraySort(int[] array) {

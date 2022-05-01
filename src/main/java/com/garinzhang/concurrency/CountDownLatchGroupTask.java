@@ -1,4 +1,4 @@
-package com.garinzhang.concurrency;
+package main.java.garinzhang.concurrency;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

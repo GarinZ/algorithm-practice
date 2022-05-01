@@ -1,4 +1,4 @@
-package com.garinzhang;
+package main.java.garinzhang;
 
 import java.util.*;
 

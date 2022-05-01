@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.concurrent.Semaphore;
 
 public class AdjacencyList {
     static class Graph {
@@ -50,6 +51,31 @@ public class AdjacencyList {
         return null;
     }
 
+    public static List<Integer> dfs(int s, int t, Graph graph) {
+        boolean[] visited = new boolean[graph.v];
+        visited[s] = true;
+        int[] prev = new int[graph.v];
+        for (int i = 0; i < graph.v; i ++) {
+            prev[i] = -1;
+        }
+        recurDfs(s, t, visited, prev, graph);
+        return getPath(prev, t);
+    }
+
+    public static void recurDfs(int s, int t, boolean[] visited, int[] prev, Graph graph) {
+        LinkedList<Integer> edages = graph.adj[s];
+        for (int i = 0; i < edages.size(); i ++) {
+            if (!visited[edages.get(i)]) {
+                prev[edages.get(i)] = s;
+                visited[edages.get(i)] = true;
+                recurDfs(edages.get(i), t, visited, prev, graph);
+                if (prev[t] != -1) {
+                    return;
+                }
+            }
+        }
+    }
+
     public static List<Integer> getPath(int[] prev, int t) {
         List<Integer> result = new ArrayList<>();
         int i = t;
@@ -58,6 +84,10 @@ public class AdjacencyList {
             i = prev[i];
         }
         return result;
+    }
+
+    public static void main (String[] args) throws Exception {
+        Semaphore semaphore = new Semaphore(2);
     }
     
 }
