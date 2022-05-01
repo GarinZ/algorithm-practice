@@ -52,7 +52,7 @@ public class MinPathSum {
                 if (newPathDist < adjVertex.dist) {
                     adjVertex.dist = newPathDist;
                     // 碍于原生PriorityQueue实现，先这么写但可以优化，这里的时间复杂度O(nlog(n))
-//                    minHeap.remove(adjVertex);
+                    minHeap.remove(adjVertex);
                     minHeap.add(adjVertex);
                 }
             }
